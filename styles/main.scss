@@ -1,0 +1,88 @@
+$textColor: #ce9797;
+
+body {
+  font-size: 1rem;
+  font-family: Josefin Sans, sans-serif;
+}
+
+h1 {
+  font-size: 5.5rem;
+  line-height: 80px;
+  color: #413a3a;
+  font-weight: 700;
+  letter-spacing: 15px;
+  margin-bottom: 40px;
+}
+
+span {
+  color: $textColor;
+  font-weight: 100;
+}
+
+p {
+  line-height: 30px;
+  // color: $textColor;
+  background-image: linear-gradient(135deg, hsl(0, 84%, 82%), hsl(0, 26%, 42%));
+  background-clip: text;
+  color: transparent;
+}
+
+input::placeholder {
+  margin-left: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.logo {
+  margin-bottom: 60px;
+  width: 22%;
+}
+
+.email {
+  position: absolute;
+  height: 50px;
+  width: 350px;
+  border-radius: 30px;
+  float: left;
+  padding-left: 30px;
+  border-color: grey;
+  border-style: solid;
+}
+
+.submit {
+  position: absolute;
+  margin-left: 300px;
+  height: 56px;
+  width: 100px;
+  border-radius: 30px;
+  background-image: linear-gradient(135deg, hsl(0, 84%, 82%), hsl(0, 26%, 42%));
+  border-color: grey;
+
+  border-style: solid;
+}
+
+.submit:hover {
+  background-image: none;
+  background-color: #ce9797;
+  border: none;
+}
+
+.right-container {
+  width: auto;
+}
+
+.err {
+  margin-top: 80px;
+  margin-left: 30px;
+  color: red;
+  font-size: 0.75rem;
+}
